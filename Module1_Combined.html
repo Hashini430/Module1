@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 1 - Python Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px auto;
+      max-width: 1000px;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    h1, h2, h3 {
+      color: #111827;
+      page-break-after: avoid;
+    }
+    .section {
+      border-top: 2px solid #e5e7eb;
+      padding-top: 20px;
+      margin-top: 30px;
+      page-break-inside: avoid;
+    }
+    pre {
+      background: #f3f4f6;
+      padding: 16px;
+      border-radius: 8px;
+      overflow: auto;
+      border: 1px solid #d1d5db;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    .result-box {
+      background: #f9fafb;
+      border-left: 4px solid #10b981;
+      padding: 12px 16px;
+      margin-top: 12px;
+    }
+    .info {
+      color: #374151;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>Module 1 - Python Programming Notes</h1>
+  <p class="info">Combined document for all exercises in the repository.</p>
+
+  <div class="section">
+    <h2>1. Conditional Statements in Python: Even or Odd Checker</h2>
+    <h3>🎯 Aim</h3>
+    <p>To write a Python program to check whether the given number is <strong>even</strong> or <strong>odd</strong> using <code>if...else</code> statements.</p>
+
+    <h3>🧠 Algorithm</h3>
+    <ol>
+      <li>Get an input from the user.</li>
+      <li>Convert the input to an integer and store it in a variable <code>a</code>.</li>
+      <li>Use the modulo operator <code>%</code> to check if <code>a % 2 == 0</code>.</li>
+      <li>If true, print <code>"EVEN"</code>; otherwise print <code>"ODD"</code>.</li>
+      <li>End the program.</li>
+    </ol>
+
+    <h3>🧾 Program</h3>
+    <pre><code>a = int(input())
+
+if a % 2 == 0:
+    print("EVEN")
+else:
+    print("ODD")</code></pre>
+
+    <h3>Output</h3>
+    <pre><code>Input: 8
+Output: EVEN</code></pre>
+
+    <h3>Result</h3>
+    <p>The program checks whether a number is even or odd and prints the correct result successfully.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Datatypes - Boolean Expression Evaluation in Python</h2>
+    <h3>🎯 Aim</h3>
+    <p>To write a Python program that evaluates and prints the results of boolean and arithmetic expressions involving <code>True</code> and <code>False</code>.</p>
+
+    <h3>🧠 Algorithm</h3>
+    <ol>
+      <li>Set variable <code>a</code> to the result of <code>0 == True</code>.</li>
+      <li>Set variable <code>b</code> to the result of <code>False == False</code>.</li>
+      <li>Set variable <code>c</code> to the result of <code>True + True</code>.</li>
+      <li>Set variable <code>d</code> to the result of <code>False + 9</code>.</li>
+      <li>Print the values of <code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code>.</li>
+    </ol>
+
+    <h3>💻 Program</h3>
+    <pre><code>a = 0 == True
+b = False == False
+c = True + True
+d = False + 9
+
+print("a is", a)
+print("b is", b)
+print("c:", c)
+print("d:", d)</code></pre>
+
+    <h3>Output</h3>
+    <pre><code>a is False
+b is True
+c: 2
+d: 9</code></pre>
+
+    <h3>Result</h3>
+    <p>Boolean and arithmetic expressions involving <code>True</code> and <code>False</code> were evaluated successfully.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Datatypes - Character Literal in Python</h2>
+    <h3>🎯 Aim</h3>
+    <p>To write a Python program that prints the characters <code>'T'</code> and <code>'a'</code> using character literals.</p>
+
+    <h3>🧠 Algorithm</h3>
+    <ol>
+      <li>Print the character <code>'T'</code>.</li>
+      <li>Print the character <code>'a'</code>.</li>
+    </ol>
+
+    <h3>🧾 Program</h3>
+    <pre><code>char1 = 'T'
+char2 = 'a'
+print(char1)
+print(char2)</code></pre>
+
+    <h3>Output</h3>
+    <pre><code>T
+a</code></pre>
+
+    <h3>Result</h3>
+    <p>The Python program successfully printed the characters <code>T</code> and <code>a</code>.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Datatypes - Complex Number Creation in Python</h2>
+    <h3>🎯 Aim</h3>
+    <p>To write a Python program that reads two integers, creates a complex number using them, and then prints the complex number along with its real and imaginary parts.</p>
+
+    <h3>🧠 Algorithm</h3>
+    <ol>
+      <li>Read an integer input from the user and assign it to <code>a</code>.</li>
+      <li>Read another integer input and assign it to <code>b</code>.</li>
+      <li>Create a complex number <code>x</code> using <code>complex(a, b)</code>.</li>
+      <li>Print the complex value.</li>
+      <li>Print its real and imaginary parts using <code>x.real</code> and <code>x.imag</code>.</li>
+    </ol>
+
+    <h3>💻 Program</h3>
+    <pre><code>a = int(input())
+b = int(input())
+
+x = complex(a, b)
+
+print(x)
+print(x.real)
+print(x.imag)</code></pre>
+
+    <h3>Output</h3>
+    <pre><code>Input: 3
+4
+(3+4j)
+3.0
+4.0</code></pre>
+
+    <h3>Result</h3>
+    <p>The program successfully created and printed the complex number and its real/imaginary parts.</p>
+  </div>
+
+  <div class="section">
+    <h2>5. Datatypes - Read and Print a String in Python</h2>
+    <h3>🎯 Aim</h3>
+    <p>To write a Python program to read a string from the user and then print it.</p>
+
+    <h3>🧠 Algorithm</h3>
+    <ol>
+      <li>Assign a variable named <code>men_stepped_on_the_moon</code>.</li>
+      <li>Use <code>input()</code> to read a string from the user.</li>
+      <li>Print the value stored in the variable.</li>
+    </ol>
+
+    <h3>🧾 Program</h3>
+    <pre><code>men_stepped_on_the_moon = input()
+print(men_stepped_on_the_moon)</code></pre>
+
+    <h3>Output</h3>
+    <pre><code>Input: Neil Armstrong
+Output: Neil Armstrong</code></pre>
+
+    <h3>Result</h3>
+    <p>The string entered by the user was successfully read and printed.</p>
+  </div>
+</body>
+</html>
